@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Swiper CSS-->
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <!--Fonts Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--custom CSS-->
+    <link rel="stylesheet" href="css/styleForm.css">
+    <title>Agencia TeamUG</title>
+</head>
+<body>
+    <section class="header">
+        <div class="logo-section">
+            <img class="logo-img" src="LogoUg.ico" alt="Logo de la Empresa" id="logo">
+            <a href="home.php" class="logo">Agencia TeamUG</a>
+            
+        </div>
+        <nav class="navbar">
+            <a href="home.php">Inicio</a>
+            <a href="home.php">Iniciar Sesion</a>
+            <a href="about.php">Sobre Nosotros</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+
+    <section class="pag-about">
+        <div class="pag-dir">
+            <div class="pag-dir-derecha">
+                <div class="imagen-tamaño">
+                    <img src="images/about-img.jpg" alt="">
+                </div>
+                 <div class="content">
+                    <h3>Sobre Nosotros</h3>
+                    <p>En nuestra Agencia UG creemos que cada viaje es una aventura única.<br> Por eso, te ofrecemos un servicio personalizado que se adapta a tus gustos y necesidades. <br>Desde la elección del destino hasta la organización de cada detalle, nuestra pagina te ofrecera los mejores lugares para que disfrutes de unas vacaciones inolvidables.</p>
+                </div>
+            </div>
+            
+            <div class="pag-dir-izquierda">
+                <div class="formulario-pago">
+                    <h2>Formulario de Pago</h2>
+                    <form action="/procesar_pago" method="POST">
+                        <label for="nombre">Nombre </label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <label for="apellido">Apellido </label>
+                        <input type="text" id="apellido" name="nombre" required>
+
+                        <label for="nombreTarjeta">Nombre en la tarjeta</label>
+                        <input type="text" id="nombreTarjeta" name="nombreTarjeta" required>
+            
+                        <label for="numero_tarjeta">Número de la tarjeta</label>
+                        <input type="text" id="numero_tarjeta" name="numero_tarjeta" required pattern="\d{16}" title="Debe contener 16 dígitos">
+            
+                        <label for="fecha_expiracion">Fecha de expiración</label>
+                        <input type="text" id="fecha_expiracion" name="fecha_expiracion" required placeholder="MM/AA" pattern="(0[1-9]|1[0-2])\/?([0-9]{2})" title="Formato MM/AA">
+            
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" required pattern="\d{3}" title="Debe contener 3 dígitos">
+            
+                        <button type="submit">Pagar</button>
+                    </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+          
+            <div class="box">
+                <h3>Link Extras</h3>
+                <a href="#"><i class="fas fa-angle-right"></i>Preguntas</a>
+                <a href="#"><i class="fas fa-angle-right"></i>Sobre Nosotros</a>
+                <a href="#"><i class="fas fa-angle-right"></i>Servicio Tecnico</a>
+
+            </div>
+            <div class="box">
+                <h3>Contactanos</h3>
+                <a href="#"><i class="fas fa-phone"></i>+593 988292175</a>
+                <a href="#"><i class="fas fa-envelope"></i>falquezíco_steven@outlook.com</a>
+                <a href="#"><i class="fas fa-map"></i>UNIVERSIDAD GUAYAQUIL</a>
+            </div>
+            
+            <div class="box">
+                <h3>Siganos</h3>
+                <a href="#" class=""><i class="fab fa-facebook-f"></i>Facebook</a>
+                <a href="#" class=""><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="#" class=""><i class="fab fa-instagram"></i>Instagram</a>
+            </div>
+        </div>
+        <div class="credit">Creado por <span>@Falquez Steven</span></div>
+    </section>
+    <!--Footer Section Ends-->
+
+
+
+    
+    <!--Swiper Js-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!--Custom Js-->
+    <script src="js/main.js"></script>
+    
+
+</body>
+</html>
