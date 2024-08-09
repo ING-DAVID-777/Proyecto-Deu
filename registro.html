@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Swiper CSS-->
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <!--Fonts Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--custom CSS-->
+    <link rel="stylesheet" href="css/styleForm.css">
+
+    <link rel="icon" href="LogoUg.ico" type="image/x-icon">
+    
+    <title>Agencia TeamUG</title>
+
+</head>
+<body>
+    <!---Header Section Starts-->
+    <section class="header">
+        <div class="logo-section">
+            <img class="logo-img" src="LogoUg.ico" alt="Logo de la Empresa" id="logo">
+            <a href="index.html" class="logo">Agencia TeamUG</a>
+        </div>
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="iniciarSesion.html">Iniciar Sesion</a>
+            <a href="sobreNosotros.html">Sobre Nosotros</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+        <section class="home">
+            <div class="swiper home-slider">
+                    <div class="swiper-slide slide" style="background:url(imagenes/llamas.jpg)no-repeat">
+                        <div class="content">
+                            <div class="pag-dir-centro" >
+                                <div class="formulario-pago">
+                                    <h2>Registro</h2>
+                                    <form action="/procesar_pago" method="POST">
+                                        <label for="nombre">Nombre </label>
+                                        <input type="text" id="nombre" name="nombre" required>
+                                        <label for="apellido">Apellido </label>
+                                        <input type="text" id="apellido" name="nombre" required>
+                                        <label for="correo">Correo</label>
+                                        <input type="email" id="correo" name="correo" required>
+                                        <label for="cedula">Cedula</label>
+                                        <input type="text" id="cedula" name="cedula" required>
+                                        <label for="edad">Edad</label>
+                                        <input type="edad" id="edad" name="edad" required>
+                                        <label for="telefono">Telefono</label>
+                                        <input type="text" id="telefono" name="telefono" required>
+                                        <label for="contraseña">Contraseña</label>
+                                        <input type="password" id="contraseña" name="contraseña" required>
+                                        <a class="crear-cuenta" href="iniciarSesion.html">Iniciar Sesion</a>
+                                        <button type="submit">Registrar</button>
+                                    </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <div class="box-container">
+          
+            <div class="box">
+                <h3>Link Extras</h3>
+                <a href="#"><i class="fas fa-angle-right"></i>Preguntas</a>
+                <a href="#"><i class="fas fa-angle-right"></i>Sobre Nosotros</a>
+                <a href="#"><i class="fas fa-angle-right"></i>Servicio Tecnico</a>
+
+            </div>
+            <div class="box">
+                <h3>Contactanos</h3>
+                <a href="#"><i class="fas fa-phone"></i>+593 988292175</a>
+                <a href="#"><i class="fas fa-envelope"></i>falquezíco_steven@outlook.com</a>
+                <a href="#"><i class="fas fa-map"></i>UNIVERSIDAD GUAYAQUIL</a>
+            </div>
+            
+            <div class="box">
+                <h3>Siganos</h3>
+                <a href="#" class=""><i class="fab fa-facebook-f"></i>Facebook</a>
+                <a href="#" class=""><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="#" class=""><i class="fab fa-instagram"></i>Instagram</a>
+            </div>
+        </div>
+        <div class="credit">Creado por <span>@Falquez Steven</span></div>
+    </section>
+    <!--Footer Section Ends-->
+    <!--Swiper Js-->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!--Custom Js-->
+    <script src="js/main.js"></script>
+</body>
+</html>
