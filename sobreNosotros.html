@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!--custom CSS-->
     <link rel="stylesheet" href="css/styleForm.css">
+
     <link rel="icon" href="LogoUg.ico" type="image/x-icon">
     <title>Agencia TeamUG</title>
 
@@ -22,23 +23,81 @@
     <section class="header">
         <div class="logo-section">
             <img class="logo-img" src="LogoUg.ico" alt="Logo de la Empresa" id="logo">
-            <a href="home.php" class="logo">Agencia TeamUG</a>
+            <a href="index.html" class="logo">Agencia TeamUG</a>
             
         </div>
         <nav class="navbar">
-            <a href="home.php">Inicio</a>
-            <a href="home.php">Iniciar Sesion</a>
+            <a href="index.html">Inicio</a>
+            <a href="iniciarSesion.html">Iniciar Sesion</a>
             <a href="sobreNosotros.html">Sobre Nosotros</a>
         </nav>
         <div id="menu-btn" class="fas fa-bars"></div>
     </section>
     <section>
-        <div class="box-estudiante"> 
-            <h2>Integrantes de grupo:</h2>
-            <h4>Steven Falquez</h4>
-        </div>
+        <section class="about">
+            <div class="image">
+                <img src="images/about-img.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Por que Eleguirnos</h3>
+                <p>Porque en Team UG creemos que cada viaje es una oportunidad para crear recuerdos inolvidables. Por eso, te ofrecemos una experiencia personalizada y única, diseñada a tu medida y presupuesto.</p>
+                <div class="icons-container">
+                    <div class="icons">
+                        <i class="fas fa-map"></i>
+                        <span>Destinos Favoritos</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <span>Precios Favorables</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-headset"></i>
+                        <span> Servicio Tecnico</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
 
     </section>
+
+    <section class="reviews">
+        <div class="swiper reviews-slider">
+            <div class="swiper-wrapper contenedor">
+                <div class="swiper-slider slide">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+
+                    
+                    <p>Soy estudiante y creador de la agencia TeamUG, te doy la bienvenida a mi pagina web de agencia de viajes brindote el mejor servicio para tus viajes.</p>
+                    <h3>Falquez Steven</h3>
+                    <span>Desarrollador web</span>
+                    <img src="images/pic-1.png" alt="">
+
+                    
+                </div>
+                <div class="swiper-slider slide">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad voluptatem magnam optio ipsam quisquam reprehenderit laudantium dolores voluptates! Aliquid enim dolorum, debitis sapiente illum commodi veritatis voluptate nostrum quos cum!</p>
+                    <h3>Juana Pereira</h3>
+                    <span>Estudiante</span>
+                    <img src="images/pic-2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
 
     <section class="footer">
         <div class="box-container">
@@ -72,7 +131,5 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <!--Custom Js-->
     <script src="js/main.js"></script>
-    
-
 </body>
 </html>

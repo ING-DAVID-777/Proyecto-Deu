@@ -54,6 +54,8 @@ section{
     
 }
 
+
+
 .logo-section{
     display: flex;
     flex-direction: row;
@@ -168,7 +170,9 @@ section{
 .home .slide .content span{
     display: block;
     font-size: 2.2rem;
-    color:var(--light-white);
+    color:#eeff00;
+    text-shadow: var(--text-shadow);
+
     padding-bottom: 1rem;
     animation:fadeIn .3s linear backwards .2s;
 }
@@ -650,7 +654,19 @@ section{
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(7, 40, 71);
     width: 300px;
+    text-align: left;
+    font-size: 12px;
+
 }
+
+.formulario-pago a{
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+
 .formulario-pago h2 {
     margin-bottom: 15px;
     font-size: 24px;
@@ -671,13 +687,24 @@ section{
 .formulario-pago button {
     width: 100%;
     padding: 6px;
+    margin-top: 6px;
     background-color: #007BFF;
     border: none;
     color: white;
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
+
 }
+.crear-cuenta{
+    font-size: 14px;
+}
+
 .formulario-pago button:hover {
     background-color: #0056b3;
+}
+
+.formulario-pago a:hover {
+    color: #830fb9;
+
 }
