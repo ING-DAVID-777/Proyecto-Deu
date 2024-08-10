@@ -364,9 +364,12 @@ section{
     border-top: .1rem solid var(--light-white);
     font-size: 2rem;
     color:var(--white);
+    color:white;
+
 }
 .footer .credit span{
-    color:var(--main-color);
+    color:white;
+    font-size: 20px;
 }
 .contenedor{
     display:flex;
