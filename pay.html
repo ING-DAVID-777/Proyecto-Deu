@@ -5,15 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Swiper CSS-->
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-
-    <!--Fonts Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!--custom CSS-->
     <link rel="stylesheet" href="css/styleForm.css">
     <link rel="icon" href="LogoUg.ico" type="image/x-icon">
-    <title>Agencia TeamUG</title>
+
+    <title>Agencia Team - UG</title>
+
 </head>
 <body>
     <section class="header">
@@ -21,11 +19,13 @@
             <img class="logo-img" src="LogoUg.ico" alt="Logo de la Empresa" id="logo">
             <a href="index.html" class="logo">Agencia Team - UG</a>
         </div>
+
         <nav class="navbar">
             <a href="index.html">Inicio</a>
             <a href="iniciarSesion.html">Iniciar Sesion</a>
             <a href="sobreNosotros.html">Sobre Nosotros</a>
         </nav>
+
         <div id="menu-btn" class="fas fa-bars"></div>
     </section>
 
@@ -49,19 +49,14 @@
                         <input type="text" id="nombre" name="nombre" required>
                         <label for="apellido">Apellido </label>
                         <input type="text" id="apellido" name="nombre" required>
-
                         <label for="nombreTarjeta">Nombre en la tarjeta</label>
                         <input type="text" id="nombreTarjeta" name="nombreTarjeta" required>
-            
                         <label for="numero_tarjeta">Número de la tarjeta</label>
-                        <input type="text" id="numero_tarjeta" name="numero_tarjeta" required pattern="\d{16}" title="Debe contener 16 dígitos">
-            
+                        <input type="text" id="numero_tarjeta" name="numero_tarjeta" required pattern="\d{16}" title="Debe contener 16 dígitos">         
                         <label for="fecha_expiracion">Fecha de expiración</label>
                         <input type="text" id="fecha_expiracion" name="fecha_expiracion" required placeholder="MM/AA" pattern="(0[1-9]|1[0-2])\/?([0-9]{2})" title="Formato MM/AA">
-            
                         <label for="cvv">CVV</label>
-                        <input type="text" id="cvv" name="cvv" required pattern="\d{3}" title="Debe contener 3 dígitos">
-            
+                        <input type="text" id="cvv" name="cvv" required pattern="\d{3}" title="Debe contener 3 dígitos">          
                         <button type="submit">Pagar</button>
                     </form>
             </div>
@@ -93,7 +88,7 @@
                 <a href="#" class=""><i class="fab fa-instagram"></i>Instagram</a>
             </div>
         </div>
-        <div class="credit">Creado por <span>@Falquez Steven</span></div>
+        <div class="credit"><span>@Falquez Steven</span></div>
     </section>
     <!--Footer Section Ends-->
     <!--Swiper Js-->
