@@ -1,12 +1,11 @@
 let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.header .navbar');
 
-
-//Menu de Hmburger y menu
 menu.onclick = ()=>{
     menu.classList.toggle('fa-times');
     navbar.classList.toggle('active');
 }
+
 window.onscroll = ()=>{
     menu.classList.remove('fa-times');
     navbar.classList.remove('active');
@@ -48,12 +47,10 @@ loadMoreBtn.onclick =()=>{
     let boxes = [...document.querySelectorAll('.packages .box-container .box')];
     for(let i = currentItem; i< currentItem + 3;i++){
         boxes[i].style.display ='inline-block';
-
-    
     };
+
     currentItem += 3;
     if(currentItem >= boxes.length){
-
         loadMoreBtn.style.display='none';
     }
 };
